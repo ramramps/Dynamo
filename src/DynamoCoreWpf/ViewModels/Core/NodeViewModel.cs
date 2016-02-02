@@ -186,7 +186,7 @@ namespace Dynamo.ViewModels
 
         /// <summary>
         /// Input grid's enabled state is now bound to this property
-        /// which tracks the node model's InteractionEnabled property
+        /// which tracks the node model's InteractionEnabled property 
         /// </summary>
         public bool IsInteractionEnabled
         {
@@ -1061,6 +1061,7 @@ namespace Dynamo.ViewModels
         /// When a node is frozen, raise the IsFrozen property changed event on
         /// all its downstream nodes, to ensure UI updates correctly.
         /// </summary>
+        /// 
         private void RaisePropertyChangedOnDownStreamNodes()
         {
             HashSet<NodeModel> nodes = new HashSet<NodeModel>();
